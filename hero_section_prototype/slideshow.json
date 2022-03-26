@@ -1,0 +1,46 @@
+{
+    "items": [{
+            "backgroundImage": "../img/hero/hero_lithapo.jpeg",
+            "channelType": "Television",
+            "channelName": "SABC 2",
+            "showName": "Lithapo",
+            "showCaption": "See what happened.It went down yesterday",
+            "showControls": ["<img src='../icons/tv_play.png' /><p>Catch up</p>",
+                "<img src='../icons/tv.png'/><p>TV Guide</p>",
+                "<img src='../icons/radio.png'/><p>Live Stream</p>"
+            ]
+        },
+        {
+            "backgroundImage": "../img/hero/hero_radio.jpeg",
+            "channelType": "Radio",
+            "channelName": "Metro FM",
+            "showName": "Morning Flava",
+            "showCaption": "Catch the Q Twins this Thursday",
+            "showControls": ["<img src='../icons/radio_play.png' />Live Listen",
+                "<img src='../icons/music.png' /><p>Music Chats</p>",
+                "<img src='../icons/lineup.png' /><p>Liveups</p>"
+            ]
+        },
+        {
+            "backgroundImage": "../img/hero/hero_sport.jpeg",
+            "channelType": "News",
+            "channelName": "Top Stories",
+            "showName": "Revealed",
+            "showCaption": "Busisiwe Mkhwebane's radical economic transformation outburst after stuff questioned ex - CEO 's hiring",
+            "showControls": ["<img src='../icons/news_play.png' /><p>Watch</p>",
+                "<img src='../icons/article.png' /><p>Articles</p>"
+            ]
+        },
+        {
+            "backgroundImage": "../img/hero/hero_news.jpeg",
+            "channelType": "Sports",
+            "channelName": "Soccer",
+            "showName": "PSL",
+            "showCaption": "Orlando Pirates coach tells players to have fun before 2 - 1 win",
+            "showControls": ["<img src='../icons/sport_play.png' /><p>Highlights</p>",
+                "<img src='../icons/matches.png' /><p>Matches</p>",
+                "<img src='../icons/tables.png' /><p>Tables</p>"
+            ]
+        }
+    ]
+}

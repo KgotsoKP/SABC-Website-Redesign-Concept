@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="test_style.css" />
+    <link
+      rel="stylesheet"
+      href="../fontawesome-free-5.12.0-web/fontawesome-free-5.12.0-web/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <title>Prototype test</title>
+  </head>
+
+  <body>
+    <!--Slide Menu Overlay-->
+
+    <div id="myNav" class="overlay">
+      <!--Button to close the overlay navigation-->
+
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+        <i class="fa fa-times fa-2x"></i>
+      </a>
+
+      <!--Ovelay Content-->
+      <div class="overlay-content">
+        <form action="">
+          <span><i class="fa fa-search"></i></span
+          ><input
+            type="search"
+            name="search"
+            id="serch-bar"
+            placeholder="Search for something here"
+          />
+        </form>
+
+        <div class="nav-content">
+          <div class="big-list">
+            <h2><a href="#">TV Licences</a></h2>
+            <h2><a href="#">Advertise</a></h2>
+            <h2><a href="#">Contact</a></h2>
+            <h2><a href="#">Editorial Policy</a></h2>
+          </div>
+
+          <div class="content-sub-group">
+            <ul class="content-sub content-sub-1">
+              <h2 class="text-nav-head">Content Submision</h2>
+              <li><a href="#">Technical Delivery Specs</a></li>
+              <li><a href="#">Terms of trade</a></li>
+              <li><a href="#">Policy</a></li>
+            </ul>
+
+            <ul class="content-sub content-sub-2">
+              <h2 class="text-nav-head">Media Center</h2>
+              <li><a href="#">News & Press</a></li>
+              <li><a href="#">Stories & Vox Pop</a></li>
+              <li><a href="#">Presentations</a></li>
+            </ul>
+          </div>
+
+          <ul class="content-sub content-sub-3">
+            <h2 class="text-nav-head">Corporate</h2>
+            <li><a href="#">About</a></li>
+            <li><a href="#">SABC Board</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Internships & Learnerships</a></li>
+            <li><a href="#">Community Briefs</a></li>
+            <li><a href="#">Annual Reports</a></li>
+            <li><a href="#">Trade</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <header id="body-head">
+      <div class="logo">
+        <img src="../img/sabclogo_full-white.png" alt="" />
+      </div>
+
+      <nav class="navigation">
+        <ul>
+          <li>
+            Television<i class="fa fa-chevron-down" aria-hidden="true"></i>
+            <ul class="sub-menu tv-sub-menu">
+              <li>SABC 1</li>
+              <li>SABC 2</li>
+              <li>SABC 3</li>
+              <li>Live Stream</li>
+              <li>Catch up</li>
+            </ul>
+          </li>
+
+          <li>
+            Radio<i class="fa fa-chevron-down" aria-hidden="true"></i>
+            <ul class="sub-menu radio-sub-menu">
+              <li>Playlists</li>
+              <li>Line ups</li>
+              <li>Updates</li>
+              <li>Live Listen</li>
+            </ul>
+          </li>
+
+          <li>
+            Sports<i class="fa fa-chevron-down" aria-hidden="true"></i>
+            <ul class="sub-menu sports-sub-menu">
+              <li>Highlights</li>
+              <li>Matches</li>
+              <li>Updates</li>
+              <li>Tables</li>
+            </ul>
+          </li>
+
+          <li>
+            News<i class="fa fa-chevron-down" aria-hidden="true"></i>
+            <ul class="sub-menu news-sub-menu">
+              <li>Breaking News</li>
+              <li>Headlines</li>
+              <li>Financals</li>
+              <li>Weather</li>
+            </ul>
+          </li>
+
+          <li>Education</li>
+
+          <li><i class="fa fa-bars" onclick="openNav()"></i></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="slideshow" id="slideshowid"></div>
+
+    <script src="menu.js"></script>
+    <script src="test.js"></script>
+  </body>
+</html>

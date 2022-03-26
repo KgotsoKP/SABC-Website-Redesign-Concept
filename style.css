@@ -1,0 +1,702 @@
+/*Global Styles*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    --webkit-font-smoothing: antialiased;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    margin: 0.5rem 0;
+}
+
+h2 {
+    margin: 1rem 0rem;
+}
+
+/*Heade styles*/
+
+/* Main bosy content */
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.content {
+    margin: 7.5rem 0;
+}
+
+.content>h2 {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: .48px;
+    text-transform: uppercase;
+}
+
+.section-name-border {
+    border: 2px solid #ffcc00;
+    width: 3rem;
+    height: 0;
+    margin-bottom: 2rem;
+}
+
+.section-name-border-radio {
+    border: 2px solid #dd1c23;
+}
+
+.section-name-border-sports {
+    border: 2px solid #40b649;
+}
+
+.section-name-border-news {
+    border: 2px solid #0044ff;
+}
+
+
+.section-content {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 400px;
+    -webkit-overflow-scrolling: touch;
+}
+
+.section-content::-webkit-scrollbar {
+    display: none;
+}
+
+
+.section-content>article {
+    margin-right: 2rem;
+}
+
+/* Television :  Catch up section */
+
+.tv-catchup {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1rem;
+}
+
+.show-1 {
+    width: 500px;
+    background: url(./img/tv/catch-up_gen.jpg) no-repeat center center/cover;
+    grid-row: 1/3;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.show-2 {
+    background: url(./img/tv/cachup_isidingo.png) no-repeat center center/cover;
+}
+
+.show-3 {
+    background: url(./img/tv/catch_up_uzalo.jpg) no-repeat center center/cover;
+}
+
+.show-2,
+.show-3 {
+    width: 250px;
+    border-radius: 10px;
+    padding: 1rem;
+    position: relative;
+}
+
+.show {
+    position: relative;
+}
+
+.watch-now {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 1rem;
+    font-weight: bold;
+    color: white;
+}
+
+.watch-now img {
+    width: 1.8rem;
+    margin-right: 0.8rem;
+}
+
+/* Television :  TV Guide */
+
+.tv-guide {
+    width: 500px;
+    padding: 1rem;
+    background: black;
+    color: white;
+    border-radius: 10px;
+    position: relative;
+}
+
+.tv-guide div {
+    width: 400px;
+}
+
+.tv-guide table {
+    font-size: 0.8rem;
+    position: absolute;
+    top: 25%;
+    width: 100%;
+}
+
+.tv-content table tbody tr td {
+    padding: 0.8rem 1.2rem;
+}
+
+/* Television : Live stream*/
+
+.tv-live-stream {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    position: relative;
+}
+
+.live-stream-channel-airing p {
+    text-align: center;
+    width: 200px;
+    color: white;
+    font-weight: bold;
+}
+
+.live-stream-sabc1 {
+    background: url(./img/tv/live_stream_1.jpg) no-repeat center center/cover;
+}
+
+.live-stream-sabc2 {
+    background: url(./img/tv/live_stream_2.jpg) no-repeat center center/cover;
+}
+
+.live-stream-sabc3 {
+    background: url(./img/tv/live_stream_3.jpg) no-repeat center center/cover;
+}
+
+.live-stream-sabcencore {
+    background: url(./img/tv/live_stream_zola_4.jpg) no-repeat center center/cover;
+}
+
+.live-stream-sabc1,
+.live-stream-sabc2,
+.live-stream-sabc3,
+.live-stream-sabcencore {
+    border-radius: 10px;
+    padding: 1rem;
+    width: 250px;
+}
+
+.live-stream-channel-airing {
+    position: absolute;
+    bottom: 1rem;
+}
+
+/* Television - whats hot */
+
+.tv-whats-hot {
+    background-image: url(./img/tv/C_i5XyaXcAABqh7.jpg) no-repeat cover cover/center;
+}
+
+.whats-hot-container {
+    width: 400px;
+    height: 400px;
+    padding: 1rem;
+    border-radius: 10px;
+    background: url(./img/tv/C_i5XyaXcAABqh7.jpg) no-repeat cover cover/center;
+    position: relative;
+}
+
+.whats-hot-info {
+    position: absolute;
+    bottom: 1rem;
+}
+
+
+/*==================================================================================================*/
+/*RADIO*/
+/*==================================================================================================*/
+
+/* Radio - Playlist */
+
+.radio .radio-playlist {
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
+    width: 500px;
+    border-radius: 10px;
+    padding: 1rem;
+    height: 250px;
+    margin-right: 1rem;
+}
+
+.song {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1rem;
+    width: 500px;
+
+}
+
+.song img {
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    margin: 0 1rem;
+}
+
+.song p {
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+.song h3 {
+    font-weight: bolder;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    color: #999;
+}
+
+
+.song-name {
+    font-weight: bolder;
+}
+
+/* Radio - radio lineups*/
+
+.radio article>div {
+    border-radius: 10px;
+}
+
+.radio .radio-lineups div {
+    width: 400px;
+    height: 250px;
+    background: url(./img/radio/lineups.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.radio .radio-live-stream div {
+    width: 400px;
+    height: 250px;
+    background: url(./img/radio/live_stream.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.radio .radio-podcast div {
+    width: 400px;
+    height: 250px;
+    background: url(./img/radio/podcast.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.radio .radio-whats-hot div {
+    width: 400px;
+    height: 250px;
+    background: url(./img/radio/unplugged.jpg) no-repeat center;
+    background-size: cover;
+}
+
+
+.radio .section-content {
+    height: fit-content;
+}
+
+/*==================================================================================================*/
+/*SPORTS*/
+/*==================================================================================================*/
+
+.sports .section-content {
+    height: 250px;
+}
+
+.sports article {
+    border-radius: 10px;
+}
+
+.live-indicator {
+    color: white;
+    font-size: 0.7rem;
+    background-color: red;
+    padding: 0.2rem 1rem;
+    width: fit-content;
+    border-radius: 4px;
+}
+
+.sport-updates {
+    width: 400px;
+    height: 218px;
+    background: url(./img/sports/new_updates.jpg) no-repeat center;
+    background-size: cover;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.sport-updates .updates-information {
+    width: 500px;
+}
+
+
+.matches-container {
+    display: flex;
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+.team {
+    text-align: center;
+    padding: 1rem;
+}
+
+.sport-matches p {
+    font-size: 0.8rem;
+}
+
+.sport-matches {
+    border: 1px black solid;
+    position: relative;
+}
+
+.matches-updates {
+    position: absolute;
+    text-align: center;
+    bottom: 0.5rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.sport-tables {
+    padding: 1rem;
+}
+
+.sport-tables table img {
+    width: 30px;
+}
+
+.sports table {
+    font-size: 0.8rem;
+    width: 500px;
+}
+
+.sports table tbody tr td {
+    padding: 0.3rem 1rem;
+}
+
+.sport-upcoming {
+    border: 1px solid black;
+    position: relative;
+}
+
+.upcoming-container {
+    width: 400px;
+    text-align: center;
+    transform: translate(0, 25%);
+}
+
+.upcoming-team-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upcoming-team-details p {
+    font-size: 0.8rem;
+}
+
+.upcoming-team1 img {
+    width: 30px;
+}
+
+/*
+.upcoming-match-details {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+*/
+
+/*==================================================================================================*/
+/*NEWS*/
+/*==================================================================================================*/
+.news .section-content>div {
+    margin-right: 2rem;
+}
+
+.breaking-news-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1rem;
+}
+
+.story-1 {
+    grid-row: 1/3;
+}
+
+.story-1 {
+    background: url(./img/news/story1.jpg) no-repeat;
+    width: 500px;
+}
+
+.story-2 {
+    background: url(./img/news/story2.jpeg) no-repeat;
+}
+
+.story-3 {
+    background: url(./img/news/story3.jpg) no-repeat;
+    width: 300px;
+}
+
+.story-1,
+.story-2,
+.story-3 {
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+.news-story {
+    position: relative;
+}
+
+.news-category {
+    background-color: red;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 0.3rem 1rem;
+    width: fit-content;
+    border-radius: 1rem;
+}
+
+.headlines-container {
+    position: relative;
+    background: url(./img/news/headline.jpg) no-repeat;
+    border-radius: 10px;
+    padding: 1rem;
+    background-size: cover;
+    background-position: center;
+    max-width: 600px;
+}
+
+.headlines-container p {
+    margin-right: 300px;
+}
+
+.news-heading-lg {
+    color: white;
+    font-size: 1.3rem;
+    position: absolute;
+    bottom: 0rem;
+}
+
+.news-heading-sm {
+    color: white;
+    font-size: 1rem;
+    position: absolute;
+    bottom: 0rem;
+}
+
+.news-story {
+    padding: 1rem;
+}
+
+.weather-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+
+.weather-card {
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .16);
+}
+
+.weather-card p {
+    position: absolute;
+    left: 1rem;
+    bottom: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: lighter;
+}
+
+.weather-card-1,
+.weather-card-2,
+.weather-card-3,
+.weather-card-4 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20vw;
+}
+
+.weather-card-1 {
+    background-image: url(./icons/cloudy.jpg);
+}
+
+.weather-card-2,
+.weather-card-3 {
+    background-image: url(./icons/sunny.jpg);
+}
+
+.weather-card-4 {
+    background-image: url(./icons/rain.jpg);
+}
+
+.weather-condition div {
+    border: 2px solid black;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    position: relative;
+    left: 63%;
+    top: -3rem;
+}
+
+.weather-condition h6 {
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+.weather-condition h2 {
+    font-size: 3rem;
+    font-weight: normal;
+    margin-bottom: 0rem;
+}
+
+.text-sm {
+    font-size: 0.7rem;
+}
+
+.text-lg {
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.currency-container {
+    box-shadow: 0 0 6px rgba(0, 0, 0, .16);
+    border-radius: 10px;
+}
+
+.currency-head {
+    display: flex;
+    justify-content: center;
+}
+
+.currency-head p {
+    margin: 0 2rem;
+}
+
+.currency-container {
+    padding: 2rem;
+}
+
+.currency {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+}
+
+.currency-info {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-right: 80px;
+    align-items: center;
+}
+
+.currency-info p {
+    line-height: 0;
+    width: 70px;
+}
+
+.currency-info .text-sm {
+    margin-top: -0.5rem;
+}
+
+.currency-info .text-lg {
+    margin-bottom: -0.5rem;
+}
+
+.currency-info img {
+    grid-row: 1/3;
+}
+
+.currency-rate {
+    width: 200px;
+    text-align: right;
+    font-weight: 600;
+}
+
+.news img {
+    width: 30px;
+    margin-right: -1.5rem;
+}
+
+/*==================================================================================================*/
+/*FOOTER*/
+/*==================================================================================================*/
+
+footer {
+    padding: 3rem;
+    background: black;
+    color: white;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10rem 0;
+}
+
+.footer-cols {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5rem;
+}
+
+.footer-cols ul li {
+    margin: 2rem 0;
+}
+
+.footer-terms {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-policy-and-terms {
+    display: flex;
+    align-items: center;
+}
+
+.footer-policy-and-terms p {
+    margin: 1rem 2rem;
+}
+
+.section-content {
+    padding: 1rem 3rem 1rem 1rem;
+}
+
+.section-content>article {
+    box-shadow: 0 0 6px rgba(0, 0, 0, .16);
+    border: none;
+    border-radius: 10px;
+}
+
+.tv-content .section-content>article {
+    box-shadow: none;
+}
